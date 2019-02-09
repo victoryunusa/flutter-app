@@ -9,11 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.yellow
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text('Cofundie'),
         ),
-        body: PropertyManager(),
+        body: PropertyManager('Wuse II Building'),
         ),
     );
   }
